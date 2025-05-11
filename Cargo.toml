@@ -1,0 +1,15 @@
+[package]
+name = "dragonslayer-nats-geyser-plugin"
+version = "0.0.1"
+edition = "2024"
+authors = ["Alaa Zorkane <hey@alaa.computer>"]
+description = "NATS geyser plugin."
+license = "AGPL-3.0"
+homepage = "https://github.com/alaazorkane/dragonslayer-nats-geyser"
+documentation = "https://docs.rs/dragonslayer-nats-geyser"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+
+[dependencies]
