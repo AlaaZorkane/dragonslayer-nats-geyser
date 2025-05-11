@@ -1,8 +1,10 @@
+<img src="https://s3.alaa.computer/dragonslayer-github-banner.png" alt="guts holding a sword with engraved dragonslayer geyser plugin" width="600">
+
 # Dragonslayer NATS Geyser Plugin
 
-_Dragonslayer_ is a Solana Geyser plugin to stream account, slot, transaction, and block updates via the NATS messaging system. This plugin allows developers to subscribe to real-time Solana blockchain events and integrate them into their applications using the high-performance NATS protocol.
+**Dragonslayer** is a Solana Geyser plugin to stream account, slot, transaction, and block updates via the NATS messaging system. This plugin allows developers to subscribe to real-time Solana blockchain events and integrate them into their applications using the high-performance NATS protocol.
 
-This plugin is designed to work with Solana's [Geyser plugin framework](https://docs.solana.com/developing/plugins/geyser-plugins).
+This plugin is designed to work with Solana's [Geyser plugin framework](https://docs.anza.xyz/validator/geyser).
 
 ## Table of Contents
 
@@ -174,8 +176,8 @@ Considerations for message schemas:
 
 ## Contributing
 
-Contributions are welcome\! Please refer to `CONTRIBUTING.md` for guidelines on how to contribute to this project, including reporting issues, submitting pull requests, and coding standards.
+Contributions are welcome! Please refer to `CONTRIBUTING.md` for guidelines on how to contribute to this project, including reporting issues, submitting pull requests, and coding standards.
 
 ## License
 
-This project will be licensed under the MIT license.
+Check the `LICENSE` and `LICENSING.md` files.
