@@ -1,0 +1,27 @@
+[package]
+name = "dragonslayer-nats-geyser-plugin"
+version = "0.0.1"
+edition = { workspace = true }
+authors = { workspace = true }
+homepage = { workspace = true }
+repository = { workspace = true }
+license = { workspace = true }
+keywords = { workspace = true }
+publish = { workspace = true }
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+
+[dependencies]
+tokio = { workspace = true, features = ["rt-multi-thread", "macros", "fs"] }
+affinity = { workspace = true }
+anyhow = { workspace = true }
+log = { workspace = true }
+thiserror = { workspace = true }
+
+# solana
+agave-geyser-plugin-interface = { workspace = true }
+solana-logger = { workspace = true }
+solana-sdk = { workspace = true }
+solana-transaction-status = { workspace = true }

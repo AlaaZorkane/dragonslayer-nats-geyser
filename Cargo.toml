@@ -1,15 +1,38 @@
-[package]
-name = "dragonslayer-nats-geyser-plugin"
-version = "0.0.1"
+[workspace]
+resolver = "2"
+members = ["dragonslayer-nats-geyser-plugin"]
+
+[workspace.package]
 edition = "2024"
-authors = ["Alaa Zorkane <hey@alaa.computer>"]
 description = "NATS geyser plugin."
+homepage = "https://dragonslayer.rs"
+repository = "https://github.com/alaazorkane/dragonslayer-nats-geyser"
+keywords = ["solana", "geyser", "nats", "dragonslayer"]
+publish = false
+authors = ["Alaa Zorkane <hey@alaa.computer>"]
 license = "AGPL-3.0"
-homepage = "https://github.com/alaazorkane/dragonslayer-nats-geyser"
 documentation = "https://docs.rs/dragonslayer-nats-geyser"
 
-[lib]
-crate-type = ["cdylib", "rlib"]
+[workspace.dependencies]
+anyhow = "1.0.98"
+bs58 = "0.5.1"
+env_logger = "0.11.8"
+smallvec = "1.13.2"
+spl-token-2022 = "6.0.0"
+thiserror = "1.0.63"
+tokio = "1.21.2"
+tokio-stream = "0.1.11"
+affinity = "0.1.2"
+log = "0.4.27"
+
+# solana
+agave-geyser-plugin-interface = "~2.2.7"
+solana-account-decoder = "~2.2.7"
+solana-logger = "~2.3.1"
+solana-sdk = "~2.2.2"
+solana-transaction-status = "~2.2.7"
 
 
-[dependencies]
+[profile.release]
+lto = true
+codegen-units = 1
